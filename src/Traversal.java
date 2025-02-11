@@ -6,10 +6,9 @@ public class Traversal {
     root.right = new TreeNode(86, null, null);
     root.left.right = new TreeNode(33, null, null);
 
-    // System.out.println(root.left.right.value); 
-    // preOrder(root);
+    preOrder(root);
     // inOrder(root);
-    postOrder(root);
+    // postOrder(root);
   }
 
   public static void preOrder(TreeNode node) {
