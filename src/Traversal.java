@@ -25,17 +25,17 @@ public class Traversal {
     if (node == null) {
       return;
     }
-    preOrder(node.left);
+    inOrder(node.left);
     System.out.println(node.value);
-    preOrder(node.right);
+    inOrder(node.right);
   }
 
   public static void postOrder(TreeNode node) {
     if (node == null) {
       return;
     }
-    preOrder(node.left);
-    preOrder(node.right);
+    postOrder(node.left);
+    postOrder(node.right);
     System.out.println(node.value);
   }
 }
